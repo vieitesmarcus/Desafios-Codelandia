@@ -10,7 +10,7 @@ Repositório para meus resultados dos desafios propostos pelo Prof. Iuri Silva n
 O desafio 15 consistie no README do perfil aqui no GitHub.
 
 O desafio 22 reúne todos os desafios em um portfólio da comunidade, o qual resolvi hospedar para facilitar a visualização dos resultados:
-
+https://vieitesmarcus.github.io/Desafios-Codelandia/22-Portfolio/
 
 ### Tecnologias Utilizadas
 - HTML 5
