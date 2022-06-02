@@ -17,7 +17,6 @@ O desafio 22 reúne todos os desafios em um portfólio da comunidade, o qual res
 - CSS 3
 - Javascript
 - Jquery 
-- Bootstrap 5
 - Google Fonts
 - Icons 8
 
