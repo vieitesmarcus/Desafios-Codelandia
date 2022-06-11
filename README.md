@@ -45,4 +45,4 @@ https://vieitesmarcus.github.io/Desafios-Codelandia/22-Portfolio/
 - [X] Desafio 22 - Projetos da Comunidade
 - [ ] Desafio 23 - Music Legends
 - [ ] Desafio 24 - Arcane 2
-- [ ] Desafio 25 - HomeYou
+- [X] Desafio 25 - HomeYou
