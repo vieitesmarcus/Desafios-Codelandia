@@ -1,0 +1,59 @@
+.descubra{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    .descubra__obras{
+        h1{
+            font-weight: 600;
+            font-size: 1.925rem;
+        }
+        p{
+            color: var(--gray);
+            margin-bottom: 1rem;
+        }
+        .descubra__obras--botao{
+            display: inline-block;
+            // border: 1px solid red;
+            text-align: center;
+            width: 100%;    
+        }   
+
+        .descubra__obras__avaliacoes{
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+    }
+    
+    .descubra__obras--imagem{
+        display: none;
+    }
+    
+    
+}
+
+@media screen and (min-width:400px){
+    .descubra{    
+
+        .descubra__obras{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .descubra__obras--botao{
+                display: block;
+                width: fit-content;
+            }
+        }
+
+        .descubra__obras--imagem{
+            display: block;
+            max-width: 400px;
+            width: 100%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+
+    }
+}

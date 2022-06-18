@@ -1,0 +1,24 @@
+footer{
+    text-align: center;
+    .footer__menu{
+        display: flex;
+        justify-content: space-between;
+        color: var(--black);
+        text-transform: uppercase;
+        font-family: var(--inter);
+        gap:1rem;
+        li{
+            a{
+                color: var(--black);
+            }
+        }
+    }
+}
+
+@media screen and(min-width:400px) {
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

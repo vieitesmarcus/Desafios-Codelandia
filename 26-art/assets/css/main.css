@@ -1,0 +1,239 @@
+:root {
+  --black: #0C0C0C;
+  --white: #F9F9F9;
+  --whiteLeve: #EBEBEB;
+  --gray: #737373;
+  --botao: #3772FF;
+  --inter: "Inter", sans-serif;
+  --nunito: "Nunito", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--inter);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.botao {
+  padding: 0.25rem 2rem;
+  color: var(--white);
+  background-color: var(--botao);
+  font-family: var(--nunito);
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.menu__top {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  height: 60px;
+  align-items: center;
+  gap: 1rem;
+}
+.menu__top .menu__top__item {
+  font-family: var(--inter);
+  font-weight: 600;
+}
+.menu__top .menu__top__item .menu__top__item--home {
+  color: var(--black);
+  text-decoration: none;
+}
+.menu__top .menu__top__search {
+  display: none;
+}
+
+@media screen and (min-width: 400px) {
+  .menu__top .menu__top__search {
+    margin-left: 2rem;
+    display: block;
+    max-width: 400px;
+    width: 100%;
+  }
+  .menu__top .menu__top__search input {
+    font-family: var(--nunito);
+    padding: 0.2rem 0 0.2rem 1rem;
+    border: none;
+    background-color: var(--whiteLeve);
+    width: 100%;
+  }
+}
+.descubra {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.descubra .descubra__obras h1 {
+  font-weight: 600;
+  font-size: 1.925rem;
+}
+.descubra .descubra__obras p {
+  color: var(--gray);
+  margin-bottom: 1rem;
+}
+.descubra .descubra__obras .descubra__obras--botao {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+.descubra .descubra__obras .descubra__obras__avaliacoes {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.descubra .descubra__obras--imagem {
+  display: none;
+}
+
+@media screen and (min-width: 400px) {
+  .descubra .descubra__obras {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .descubra .descubra__obras .descubra__obras--botao {
+    display: block;
+    width: fit-content;
+  }
+  .descubra .descubra__obras--imagem {
+    display: block;
+    max-width: 400px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+}
+.confira .confira__galeria {
+  text-align: center;
+}
+.confira .confira__galeria img {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 0.5rem;
+}
+.confira .confira__colecoes {
+  margin-bottom: 1rem;
+}
+.confira .confira__colecoes .confira__colecoes--botao {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 400px) {
+  .confira {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .confira .confira__galeria {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .confira .confira__galeria img {
+    width: 200px;
+    height: 194px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  .confira .confira__colecoes {
+    max-width: 400px;
+  }
+  .confira .confira__colecoes .confira__colecoes--botao {
+    display: inline;
+  }
+}
+.artistas__h1 {
+  margin-top: 2rem;
+  margin-bottom: 1.325rem;
+}
+
+.artistas {
+  margin-bottom: 1rem;
+}
+.artistas .artistas__colecao {
+  color: var(--white);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 396px;
+  height: 488px;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.artistas .artistas__colecao p small {
+  color: var(--whiteLeve);
+}
+.artistas .img1 {
+  background-image: url(../img/img-1.jpg);
+}
+.artistas .img2 {
+  background-image: url(../img/img.jpg);
+}
+.artistas .img3 {
+  background-image: url(../img/Rectangle16.jpg);
+}
+
+@media screen and (min-width: 400px) {
+  .artistas {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .artistas .artistas__colecao {
+    width: 100%;
+  }
+}
+footer {
+  text-align: center;
+}
+footer .footer__menu {
+  display: flex;
+  justify-content: space-between;
+  color: var(--black);
+  text-transform: uppercase;
+  font-family: var(--inter);
+  gap: 1rem;
+}
+footer .footer__menu li a {
+  color: var(--black);
+}
+
+@media screen and (min-width: 400px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,48 @@
+.artistas__h1{
+    margin-top: 2rem;
+    margin-bottom: 1.325rem;
+}
+.artistas{
+    margin-bottom: 1rem;
+    
+    .artistas__colecao{
+        color: var(--white);
+        // margin: 0 auto;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 396px;
+        height: 488px;
+        border-radius: 4px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        p{
+            small{
+                color: var(--whiteLeve);
+            }
+        }
+    }
+
+    .img1{
+        background-image: url(../img/img-1.jpg);
+    }
+    .img2{
+        background-image: url(../img/img.jpg);
+    }
+    .img3{
+        background-image: url(../img/Rectangle16.jpg);
+    }
+}
+
+@media screen and (min-width:400px) {
+    .artistas{
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        // flex-wrap: wrap;
+        .artistas__colecao{
+            width: 100%;
+            // border: 1px solid red;
+        }
+    }
+}
