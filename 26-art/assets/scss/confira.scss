@@ -18,12 +18,13 @@
     }
 }
 
-@media screen and (min-width:400px){
+@media screen and (min-width:769px){
     .confira{
         margin-top: 2rem;
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        align-items: center;
         gap: 1rem;
         .confira__galeria{
             text-align: center;

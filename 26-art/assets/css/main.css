@@ -82,7 +82,7 @@ a {
 }
 .descubra {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 1rem;
 }
 .descubra .descubra__obras h1 {
@@ -108,7 +108,10 @@ a {
   display: none;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 769px) {
+  .descubra {
+    justify-content: space-between;
+  }
   .descubra .descubra__obras {
     display: flex;
     flex-direction: column;
@@ -143,12 +146,13 @@ a {
   text-align: center;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 769px) {
   .confira {
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    align-items: center;
     gap: 1rem;
   }
   .confira .confira__galeria {
@@ -180,7 +184,9 @@ a {
   margin-bottom: 1rem;
 }
 .artistas .artistas__colecao {
+  text-align: center;
   color: var(--white);
+  margin: 0 auto;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -203,10 +209,12 @@ a {
   background-image: url(../img/Rectangle16.jpg);
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 768px) {
   .artistas {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
     gap: 1rem;
   }
   .artistas .artistas__colecao {
@@ -228,7 +236,7 @@ footer .footer__menu li a {
   color: var(--black);
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 415px) {
   footer {
     display: flex;
     justify-content: space-between;

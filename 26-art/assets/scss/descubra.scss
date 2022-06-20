@@ -1,6 +1,6 @@
 .descubra{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 1rem;
     .descubra__obras{
         h1{
@@ -33,9 +33,9 @@
     
 }
 
-@media screen and (min-width:400px){
+@media screen and (min-width:769px){
     .descubra{    
-
+        justify-content: space-between;
         .descubra__obras{
             display: flex;
             flex-direction: column;
