@@ -1,5 +1,5 @@
 # Desafios Codelândia
-![GitHub](https://img.shields.io/github/license/luizalaquini/Desafios-Codelandia)
+![GitHub](https://img.shields.io/github/license/vieitesmarcus/Desafios-Codelandia)
 ![GitHub repo size](https://img.shields.io/github/repo-size/vieitesmarcus/Desafios-Codelandia)
 ![GitHub language count](https://img.shields.io/github/languages/count/vieitesmarcus/Desafios-Codelandia)
 ![GitHub top language](https://img.shields.io/github/languages/top/vieitesmarcus/Desafios-Codelandia)
@@ -19,6 +19,7 @@ https://vieitesmarcus.github.io/Desafios-Codelandia/22-Portfolio/
 - Jquery 
 - Google Fonts
 - Icons 8
+- Sass
 
 ### Lista
 - [X] Desafio 1 - Blog
@@ -47,3 +48,4 @@ https://vieitesmarcus.github.io/Desafios-Codelandia/22-Portfolio/
 - [ ] Desafio 24 - Arcane 2
 - [X] Desafio 25 - HomeYou
 - [X] Desafio 26 - Art
+- [ ] Desafio 27 - FoodJP
