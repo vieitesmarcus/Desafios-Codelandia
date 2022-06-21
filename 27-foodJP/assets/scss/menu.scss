@@ -1,0 +1,79 @@
+.menu {
+    height: 60px;
+    // border: 1px solid red;
+    color: black;
+    .menu__navegacao{
+        .menu__navegacao__home{
+            font-size: 1.5rem;
+            @include font($montserrat);
+            font-weight: 700;
+            color: $black;
+        }
+        display: flex;
+        // border: 1px solid red;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        .menu__navegacao__lista{
+            display: none;
+        }
+        .menu__navegacao__botao, .menu__navegacao__botao2{
+            display: none;
+        }
+    }
+
+    .menu__navegacao {
+        .dropdown:hover{
+            
+            .dropdown-content{
+                padding: 0 1rem;
+                li{
+                    a{
+                        color: $black;
+                        @include font;
+                        font-weight: 500;
+                    }
+                    a:hover{
+                        color: $red;
+                    }
+                }
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: stretch;
+                position: absolute;
+                width: 100%;
+                // border: 1px solid blue;
+                height: 10%;
+                max-width: 1440px;
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+            }
+            .menu__navegacao__botao{
+                
+                display: block;
+                position: absolute;
+                right: 0;
+                color: $black;
+                font-weight: 600;
+                right: 1rem;
+                @include font;
+            }
+            .menu__navegacao__botao:hover{
+                color: $red;
+            }
+            .dropdown__botao{
+                transform: rotate(90deg);
+                transition: 0.5s;
+            }
+        }
+    }
+
+    
+
+}
+.red{
+    color: $red;
+}
