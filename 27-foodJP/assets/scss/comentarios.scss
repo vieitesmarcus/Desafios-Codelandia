@@ -1,0 +1,21 @@
+.comentarios{
+    border: 1px solid red;
+    .comentarios__box{
+        text-align: center;
+        border: 1px solid red;
+        border-radius: 8px;
+        background: $grayLeve;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        img.comentarios__box--perfil{
+            margin-bottom: 1rem;
+            width: 20%;
+        }
+        h2{
+            font-size: 1.125rem;
+            @include font($montserrat);
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+    }
+}

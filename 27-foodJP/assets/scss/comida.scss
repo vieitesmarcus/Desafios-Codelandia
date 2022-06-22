@@ -1,0 +1,64 @@
+.comida{
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    // border: 1px solid red;
+    .comida__img--mobile{
+        display: none;
+    }
+    div{
+        h1{
+            margin-bottom: 0.925rem;
+            @include font($montserrat);
+            font-weight: 600;
+            font-size: 2rem;
+        }
+        
+        .comida__botao {
+            display: inline-block;
+
+            color: $white;
+            background-color: $red;
+            
+            width: 100%;
+
+            border-radius: 6px;
+            padding: 10px 40px 10px 40px;
+            // border: 1px solid red;
+            text-align: center;
+            margin-bottom: 2px;
+            @include font;
+            font-weight: 600;
+
+            &:hover{
+                background-color: black;
+                color: $red;
+            }
+        }
+    }
+    .comida__img{
+        height: 350px;
+        width: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+        object-position: center;
+        max-width: 412px;
+    }
+    .comida__secundaria{
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        .comida__link {
+            color: $red;
+            text-decoration: underline;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            @include font;
+            font-weight: 500;
+        }
+    }
+}

@@ -1,8 +1,10 @@
-$red: #DA2535;
-$black: #292929;
-$gray: #616161;
+$red       : #DA2535;
+$black     : #292929;
+$gray      : #616161;
+$grayLeve  : #F3F3F3;
+$white     : #FFFFFF;
 $montserrat: 'Montserrat', sans-serif;
-$inter: 'Inter', sans-serif;
+$inter     : 'Inter',      sans-serif;
 @mixin font($family: $inter){
     font-family: $family;
 }
@@ -13,4 +15,10 @@ html{
     margin: 0 auto;
     max-width: 1440px;
     padding: 0 1rem;
+}
+
+p{
+    margin-bottom: 0.925rem;
+    @include font;
+    font-weight: 400;
 }
