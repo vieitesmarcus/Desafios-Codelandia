@@ -1,0 +1,38 @@
+.localizacao{
+    text-align: center;
+    .localizacao__mapa{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+        margin-bottom: 1rem;
+    }
+
+    .localizacao__search{
+        display: flex;
+        justify-content: center;
+        input{
+            width: 100%;
+            padding:  0.5rem 2rem;
+            border: 1px;
+            border-right: 0;
+            border-color: $black;
+            border-style: solid;
+            border-radius: 10px 0 0 10px;
+            background: transparent;
+            @include font;
+            color: $black;
+        }
+        a{
+            border-radius: 0 10px 10px 0;
+            padding:  0.5rem 1rem;
+            background-color: $red;
+            border: none;
+            display: inline-block;
+        }
+        img.localizacao__search__target{
+            margin-right: -30px;
+            margin-left: 10px;
+        }
+    }
+}

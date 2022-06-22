@@ -5,6 +5,8 @@ $grayLeve  : #F3F3F3;
 $white     : #FFFFFF;
 $montserrat: 'Montserrat', sans-serif;
 $inter     : 'Inter',      sans-serif;
+$poppins   : 'Poppins',    sans-serif;
+$roboto    : 'Roboto',     sans-serif;
 @mixin font($family: $inter){
     font-family: $family;
 }

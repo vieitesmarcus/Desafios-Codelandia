@@ -38,7 +38,7 @@
             <img src="assets/img/sushi.png" alt="sushi" class="comida__img--mobile">
         </section>
 
-        <section class="container comida">
+        <section class="container comida comida__2">
             <img src="assets/img/img segurando prato.png" alt="Prato Oriental" class="comida__img">
             <div class="comida__secundaria">
                 <h1>Feita de forma Tradicional</h1>
@@ -100,33 +100,40 @@
         </section>
 
         <div class="secao container">Localização</div>
-        <section class="localizacao">
-            <div class="localizacao__mapa"><img src="assets/img/mapa rio.png" alt=""></div>
+
+        <section class="localizacao container">
+            <div class="localizacao__mapa">
+                <picture>
+                    <source media="(min-width: 525px)" srcset="assets/img/mapa_rio.png">
+                    <img src="assets/img/mapa_rio_mobile.jpg" alt="mapa do rio de janeiro">
+                </picture>
+            </div>
             <div class="localizacao__search">
+                <img src="assets/img/target.svg" alt="" class="localizacao__search__target">
                 <input type="text" name="search" id="search" placeholder="Localização para entrega">
-                <button>Buscar</button>
+                <a href="#"><img src="assets/img/search.svg" alt=""></a>
             </div>
         </section>
     </main>
 
-    <footer class="container">
-        <a href="#">Food<span class="red">JP</span></a>
+    <footer class="footer container">
+        <a href="#" class="menu__navegacao__home">Food<span class="red">JP</span></a>
         <div class="menu__footer"> 
             <ul>
-                <li><a href="#">Contato</a></li>
+                <li class="first"><a href="#" class="first">Contato</a></li>
                 <li><a href="#">+55 21 9999-9999</a></li>
                 <li><a href="#">email@gmail.com</a></li>
             </ul>
             <ul>
-                <li><a href="#">Sobre nós</a></li>
+                <li class="first"><a href="#" class="first">Serviços</a></li>
+                <li><a href="#">Entrega</a></li>
+                <li><a href="#">Retirada</a></li>
+            </ul>
+            <ul>
+                <li class="first"><a href="#" class="first">Sobre nós</a></li>
                 <li><a href="#">Menu</a></li>
                 <li><a href="#">Valores</a></li>
                 <li><a href="#">Pagina principal</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Entrega</a></li>
-                <li><a href="#">Retirada</a></li>
             </ul>
         </div>
     </footer>

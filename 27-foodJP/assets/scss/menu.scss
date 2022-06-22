@@ -3,12 +3,7 @@
     // border: 1px solid red;
     color: black;
     .menu__navegacao{
-        .menu__navegacao__home{
-            font-size: 1.5rem;
-            @include font($montserrat);
-            font-weight: 700;
-            color: $black;
-        }
+        
         display: flex;
         // border: 1px solid red;
         justify-content: space-between;
@@ -21,6 +16,12 @@
             display: none;
         }
     }
+}
+.menu__navegacao__home{
+    font-size: 1.5rem;
+    @include font($montserrat);
+    font-weight: 700;
+    color: $black;
 }
 
 @media only screen and (max-width: 767px){
