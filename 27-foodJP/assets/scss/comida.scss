@@ -66,3 +66,48 @@
 .comida__2{
     text-align: center;
 }
+
+@media screen and(min-width:768px){
+    
+    .comida{
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: center;
+        .comida__img--mobile{
+            display: block;
+        }
+        div{
+            display: flex;
+            width: 50%;
+            flex-direction: column;
+            justify-content: space-around;
+            .comida__botao{
+                display: inline-block;
+                width: 292px;
+            }
+        }
+        .comida__secundaria{
+            h1{
+                text-align: left;
+            }
+            p{
+                text-align: left;
+            }
+            .comida__link {
+                color: $red;
+                text-decoration: underline;
+                display: inline-block;
+                width: 100%;
+                text-align: left;
+                @include font;
+                font-weight: 500;
+
+                &:hover{
+                    color: $black;
+                }
+            }
+        }
+    }
+        
+}

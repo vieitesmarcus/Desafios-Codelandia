@@ -6,10 +6,9 @@
 .populares{
     .populares__card{
         margin: 0 auto;
-        max-width: 380px;
-        max-height: 450px;
+        max-width: 312px;
         text-align: center;
-
+        height: 401px;
         // border: 1px solid black;
         border-radius: 8px;
 
@@ -52,7 +51,23 @@
         &:hover{
             cursor: pointer;
             box-shadow: 0px 0px 10px $red;
-            transform: scale(1.01);
+            margin-top: -21px;
+            height: 401px;
+        }
+    }
+}
+
+@media screen and(min-width:768px){
+    .populares{
+        display: flex;
+        gap: 1rem;
+        .populares__card{
+            max-width: 380px;
+            height: 450px;
+
+            &:hover{
+                height: 450px;
+            }
         }
     }
 }

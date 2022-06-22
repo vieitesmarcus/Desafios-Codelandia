@@ -28,7 +28,21 @@ footer.footer{
                     color: $black;
                     font-size: small;
                 }
+                a:hover{
+                    color: $red;
+                }
             }
+        }
+    }
+}
+
+@media screen and(min-width:600px){
+    .footer{
+        display: flex;
+        justify-content: start;
+        gap: 3rem;
+        .menu__navegacao__home{
+            margin-top: 10px;
         }
     }
 }

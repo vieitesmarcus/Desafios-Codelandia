@@ -3,7 +3,12 @@
     // border: 1px solid red;
     color: black;
     .menu__navegacao{
-        
+        .menu__navegacao__home{
+            font-size: 1.5rem;
+            @include font($montserrat);
+            font-weight: 700;
+            color: $black;
+        }
         display: flex;
         // border: 1px solid red;
         justify-content: space-between;
@@ -85,6 +90,12 @@
 @media only screen and (min-width: 768px){
     .menu {
         .menu__navegacao{
+            a{
+                @include font;
+                font-weight: 500px;
+                font-size: 1.325rem;
+                color: $black;
+            }
             .dropdown{
                 .dropdown__botao{
                     display: none;
@@ -93,10 +104,27 @@
                     display: flex;
                     justify-content: space-around;
                     gap: 1rem;
+                    a{
+                        @include font;
+                        font-weight: 500;
+                        font-size: 1.325rem;
+                        color: $black;
+                        &:hover{
+                            color: $red;
+                        }
+                    }
                 }
             }
             .menu__navegacao__botao2{
                 display: block;
+                border: 2px solid $black;
+                border-radius: 8px;
+                padding: 0.5rem 2rem; 
+                font-weight: 600;
+                &:hover{
+                    color: $red;
+                    background-color: $black;
+                }
             }
             // .menu__navegacao__botao2{
             //     display: block;

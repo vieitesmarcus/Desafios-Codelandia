@@ -1,5 +1,6 @@
 .comentarios{
     // border: 1px solid red;
+    margin-bottom: 2rem;
     .comentarios__box{
         text-align: center;
         // border: 1px solid red;
@@ -16,6 +17,21 @@
             @include font($montserrat);
             font-weight: 500;
             margin-bottom: 1rem;
+        }
+    }
+}
+
+@media screen and(min-width:712px){
+    .comentarios{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        .comentarios__box{
+            width: 50%;
+            text-align: left;
+            img.comentarios__box--perfil{
+                width: 30%; 
+            }
         }
     }
 }
