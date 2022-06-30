@@ -48,4 +48,4 @@ https://vieitesmarcus.github.io/Desafios-Codelandia/22-Portfolio/
 - [ ] Desafio 24 - Arcane 2
 - [X] Desafio 25 - HomeYou
 - [X] Desafio 26 - Art
-- [ ] Desafio 27 - FoodJP
+- [X] Desafio 27 - FoodJP
