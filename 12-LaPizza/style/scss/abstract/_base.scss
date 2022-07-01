@@ -1,0 +1,37 @@
+// Colors
+$green: #5C913B;
+$red: #CF3031;
+$yellow: #FFA200;
+$pink: #FFD4C9;
+
+// Neutral Colors
+
+$white: #FEF6F4;
+$gray: #616161;
+$gray-200: #2E2E2E;
+
+// fonts
+$font-family: 'Sora', sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    font-family: $font-family;
+}
+.container {
+    margin: 0 auto;
+    padding: 1rem;
+}
+.red{
+    color: $red;
+}
+
+.yellow{
+    color: $yellow;
+}
+
+.green{
+    color: $green;
+}
