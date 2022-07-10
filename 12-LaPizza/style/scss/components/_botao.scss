@@ -1,0 +1,14 @@
+@use '../abstract/variaveis' as v;
+.botao{
+    background: v.$yellow;
+    border-radius: 25px;
+    padding: 0.4rem 2rem;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover{
+        background-color: black;
+        color: v.$yellow;
+    }
+}

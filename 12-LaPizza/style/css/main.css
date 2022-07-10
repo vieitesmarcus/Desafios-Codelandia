@@ -6,11 +6,17 @@
 
 html, body {
   font-family: "Sora", sans-serif;
+  font-size: 16px;
 }
 
 .container {
+  max-width: 1440px;
   margin: 0 auto;
   padding: 1rem;
+}
+
+.center {
+  text-align: center;
 }
 
 .red {
@@ -26,16 +32,261 @@ html, body {
 }
 
 header {
-  max-width: 1440px;
-  height: 500px;
+  background-image: url(/img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 197px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+@media screen and (min-width: 520px) {
+  header {
+    height: 300px;
+  }
+}
+@media screen and (min-width: 992px) {
+  header {
+    height: 500px;
+  }
+}
+.espaco {
+  margin-top: 6rem;
+}
+
+.vendidos {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+.vendidos .ingredientes-relative img {
+  display: none;
+}
+.vendidos .vendidos__card {
+  margin: 0 auto;
+  min-width: 312px;
+  max-width: 313px;
+  height: 275px;
+  border-radius: 25px;
+  background-color: #FEF6F4;
+  margin-top: 55px;
+  border: 1px solid transparent;
+  margin-bottom: 7rem;
+}
+.vendidos .vendidos__card .img {
+  width: 100%;
+  margin-top: -60px;
+  border-radius: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(../../../img/background.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-clip: border-box;
+  padding-left: 40px;
+  margin-bottom: 1rem;
+}
+.vendidos .vendidos__card .img .heart {
+  width: 35px;
+  height: 35px;
+  border: 2px solid #CF3031;
+  border-radius: 14px;
+  background-color: #FFD4C9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -8px;
+}
+.vendidos .vendidos__card .img .heart:hover, .vendidos .vendidos__card .img .heart:active {
+  background-color: #FFA200;
+  cursor: pointer;
+}
+.vendidos .vendidos__card h2 {
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.vendidos .vendidos__card p {
+  font-weight: 400;
+  color: gray;
+  font-size: 0.925rem;
+  display: inline-block;
+  width: 70%;
+  margin-bottom: 2rem;
+}
+.vendidos .vendidos__card h1 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+.vendidos .vendidos__card div {
+  display: flex;
+  justify-content: center;
+}
+.vendidos .vendidos__card div .vendidos__card--botao {
+  border-radius: 25px;
+  max-width: 210px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .vendidos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    gap: 1rem;
+  }
+  .vendidos .vendidos__card {
+    margin: 0 auto;
+    min-width: 256px;
+    max-width: 257px;
+    height: 275px;
+    margin-bottom: 7rem;
+  }
+  .vendidos .vendidos__card h2 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .vendidos .vendidos__card p {
+    font-weight: 400;
+    color: gray;
+    font-size: 0.925rem;
+    display: inline-block;
+    width: 70%;
+    margin-bottom: 2rem;
+  }
+  .vendidos .vendidos__card h1 {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .vendidos .ingredientes-relative img {
+    display: block;
+    position: absolute;
+  }
+  .vendidos .ingredientes-relative .plant {
+    margin-top: -269px;
+    margin-left: -136px;
+  }
+  .vendidos .ingredientes-relative .pimenta {
+    margin-top: 200px;
+    margin-left: -150px;
+  }
+  .vendidos .ingredientes-relative .peixe {
+    margin-top: -150px;
+    margin-left: 250px;
+  }
+  .vendidos .ingredientes-relative .cogumelo {
+    margin-top: -200px;
+  }
+  .vendidos .ingredientes-relative .leaf {
+    margin-top: 30px;
+    object-fit: cover;
+    object-position: -30px;
+    margin-left: -25px;
+  }
+}
+.botao {
+  background: #FFA200;
+  border-radius: 25px;
+  padding: 0.4rem 2rem;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+}
+.botao:hover {
+  background-color: black;
+  color: #FFA200;
+}
+
+.sobre {
+  width: 100%;
+  background: #FCFCFC;
+}
+.sobre img {
+  display: none;
+}
+.sobre .sobre__side {
+  max-width: 500px;
+  min-width: 300px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: 100%;
+  text-align: center;
+}
+.sobre .sobre__side h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+.sobre .sobre__side p {
+  text-align: justify;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 916px) {
+  .sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    gap: 1rem;
+  }
+  .sobre img {
+    display: block;
+  }
+  .sobre .sobre__side {
+    text-align: left;
+  }
+  .sobre .sobre__side h2 {
+    text-align: left;
+  }
+
+  .tomato {
+    position: absolute;
+    width: 150px;
+    margin-left: 750px;
+    margin-top: -500px;
+  }
+
+  .pizzas-relative {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .elipse {
+    position: absolute;
+    width: 150px;
+    margin-top: -300px;
+    z-index: 1;
+  }
+
+  .pizza {
+    width: 150px;
+    position: absolute;
+    margin-top: -310px;
+    z-index: 2;
+  }
+
+  .pizza-right {
+    position: absolute;
+    margin-top: 350px;
+    margin-right: 400px;
+  }
+}
+footer {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer h1 {
+  font-size: 0.725rem;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,82 @@
+@use '../abstract/variaveis'; 
+.sobre{
+    width: 100%;
+    img{
+        display: none;
+    }
+
+    background: #FCFCFC;
+
+    .sobre__side{
+        max-width: 500px;
+        min-width: 300px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        height: 100%;
+        text-align: center;
+        h2{
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+        p{
+            text-align: justify;
+            margin-bottom: 1.5rem;
+        }
+        
+    }
+}
+
+@media screen and(min-width: 916px){
+    .sobre{ 
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        gap: 1rem;
+        img{
+            display: block;
+        }
+        
+        .sobre__side{
+            text-align: left;
+            h2{
+                text-align: left;
+            }
+        }
+    }
+
+
+    .tomato{
+        position: absolute;
+        width: 150px;
+        margin-left: 750px;
+        margin-top: -500px;
+    }
+
+    .pizzas-relative{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .elipse{
+        position: absolute;
+        width: 150px;
+        margin-top: -300px;
+        z-index: 1;
+    }
+    .pizza{
+        width: 150px;
+        position: absolute;
+        margin-top: -310px;
+        z-index: 2;
+    }
+
+    .pizza-right{
+        position: absolute;
+        margin-top: 350px;
+        margin-right: 400px;
+    }
+}

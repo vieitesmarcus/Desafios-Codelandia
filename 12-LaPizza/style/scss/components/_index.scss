@@ -1,1 +1,5 @@
-@forward 'header';
+@use 'header';
+@use 'vendidos';
+@use 'botao';
+@use 'sobre';
+@use 'footer';
